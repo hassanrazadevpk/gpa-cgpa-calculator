@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA, CGPA & Percentage Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <h1>GPA, CGPA & Percentage Calculator</h1>
+
+        <!-- University GPA, CGPA & Percentage Calculator Section -->
+        <section>
+            <h2>University GPA, CGPA & Percentage Calculator</h2>
+            <table id="semesterTable">
+                <thead>
+                    <tr>
+                        <th>Semester</th>
+                        <th>Credit Hours</th>
+                        <th>Quality Points</th>
+                        <th>Total Marks</th>
+                        <th>Obtained Marks</th>
+                        <th>GPA</th>
+                        <th>CGPA</th> <!-- Added CGPA column -->
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody id="semesterRows">
+                    <!-- Default rows for initial semesters -->
+                </tbody>
+            </table>
+            <button onclick="addSemester()">Add Semester</button>
+            <button onclick="deleteSemester()">Delete Last Semester</button>
+            <button onclick="calculateResults('university')">Calculate</button>
+            <div id="results">
+                <p id="gpaResult">GPA: </p>
+                <p id="cgpaResult">CGPA: </p>
+                <p id="percentageResult">Percentage: </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Semester GPA & Percentage Calculator Section -->
+        <section>
+            <h2>Semester GPA & Percentage Calculator</h2>
+            <table id="subjectTable">
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Credit Hours</th>
+                        <th>Grade Points</th>
+                        <th>Total Marks</th>
+                        <th>Obtained Marks</th>
+                        <th>GPA</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody id="subjectRows">
+                    <!-- Default rows for subjects -->
+                </tbody>
+            </table>
+            <button onclick="addSubject()">Add Subject</button>
+            <button onclick="deleteSubject()">Delete Last Subject</button>
+            <button onclick="calculateResults('semester')">Calculate</button>
+            <div id="semesterResults">
+                <p id="semesterGpaResult">GPA: </p>
+                <p id="semesterPercentageResult">Percentage: </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+<footer>
+    <p>&copy; 2025 <a href="https://webdoost.net">Webdoost Solutions & Technologies</a>. All Rights Reserved. | Created by <a href="https://hassanraza.dev">Hassan Raza</a></p>
+    <p>For inquiries, contact: <a href="mailto:contact@webdoost.net">contact@webdoost.net</a></p>
+</footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
